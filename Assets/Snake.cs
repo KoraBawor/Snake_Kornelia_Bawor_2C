@@ -74,6 +74,7 @@ public class NewBehaviourScript : MonoBehaviour
             Grow();
         } else if (other.tag == "Obstacle") {
             ResetState();
+            ScoreManager.instance.ResetState();
         }
 
     }

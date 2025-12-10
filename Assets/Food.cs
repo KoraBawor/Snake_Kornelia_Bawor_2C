@@ -25,6 +25,10 @@ public class Food : MonoBehaviour
     {
         if (other.tag == "Player") {
             RandomizePosition();
+
+            ScoreManager.instance.AddPoint();
+
         }
     }
+    
 }
